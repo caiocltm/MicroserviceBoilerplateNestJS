@@ -1,0 +1,16 @@
+/dist/**
+/coverage/**
+/docs/**
+/jsdoc/**
+/templates/**
+/tests/bench/**
+/tests/fixtures/**
+/tests/performance/**
+/tmp/**
+/tools/internal-rules/node_modules/**
+test.js
+!.eslintrc.js
+/stare-br-nestle-module-microservice-development-docker/**
+
+// Ignore files
+*.spec.ts

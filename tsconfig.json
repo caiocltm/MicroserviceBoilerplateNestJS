@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2020",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "paths": {
+      "@api_gateway": ["api_gateway/index"],
+      "@microservices_config": ["microservices/config/index"],
+      "@customer_microservice": ["microservices/customers/index"],
+      "@cli": ["cli/index"],
+      "@common": ["common/index"]
+    }
+  }
+}

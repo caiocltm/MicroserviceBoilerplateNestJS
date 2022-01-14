@@ -1,0 +1,24 @@
+{
+	"id": "8579622e-246b-4e7c-8665-f32d96863a4f",
+	"name": "Webjump Microservices Boilerplate",
+	"values": [
+		{
+			"key": "API_GATEWAY_URL",
+			"value": "http://localhost:8888",
+			"enabled": true
+		},
+		{
+			"key": "API_GATEWAY_DOCS",
+			"value": "http://localhost:8888/api/docs",
+			"enabled": true
+		},
+		{
+			"key": "API_GATEWAY_ACCESS_TOKEN",
+			"value": "",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2022-01-11T14:11:56.599Z",
+	"_postman_exported_using": "Postman/7.36.5"
+}

@@ -1,0 +1,34 @@
+version: '3.7'
+
+services:
+
+    mongodb:
+        image: mongo
+        container_name: boilerplate-mongo
+        volumes:
+            - ./services/mongodb/data:/data/db
+        environment:
+            - MONGO_DB_ROOT_USERNAME=guest
+            - MONGO_DB_ROOT_PASSWORD=guest
+        ports:
+            - '27017:27017'
+
+    redis:
+        image: redis:6.2.6
+        container_name: boilerplate-redis
+        ports:
+            - '6379:6379'
+
+    rabbitmq:
+        image: rabbitmq:3.9.12-management
+        container_name: boilerplate-rabbitmq
+        volumes:
+            - ./services/rabbitmq/etc:/etc/rabbitmq/
+            - ./services/rabbitmq/data:/var/lib/rabbitmq/
+            - ./services/rabbitmq/logs:/var/log/rabbitmq/
+        environment:
+            - RABBITMQ_DEFAULT_USER=guest
+            - RABBITMQ_DEFAULT_PASS=guest
+        ports:
+            - '5672:5672'
+            - '15672:15672'

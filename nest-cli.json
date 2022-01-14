@@ -1,0 +1,39 @@
+{
+    "collection": "@nestjs/schematics",
+	"sourceRoot": "api_gateway",
+	"monorepo": true,
+	"root": "api_gateway",
+	"compilerOptions": {
+		"webpack": true,
+		"tsConfigPath": "api_gateway/tsconfig.app.json"
+	},
+    "projects": {
+        "api_gateway": {
+            "type": "application",
+            "root": "api_gateway",
+            "entryFile": "main",
+            "sourceRoot": "api_gateway",
+            "compilerOptions": {
+                "tsConfigPath": "api_gateway/tsconfig.app.json"
+            }
+        },
+        "cli": {
+            "type": "application",
+            "root": "cli",
+            "entryFile": "main",
+            "sourceRoot": "cli",
+            "compilerOptions": {
+                "tsConfigPath": "cli/tsconfig.app.json"
+            }
+        },
+        "microservice_customers": {
+            "type": "application",
+            "root": "microservices/customers",
+            "entryFile": "main",
+            "sourceRoot": "microservices/customers",
+            "compilerOptions": {
+                "tsConfigPath": "microservices/customers/tsconfig.app.json"
+            }
+        }
+    }
+}
