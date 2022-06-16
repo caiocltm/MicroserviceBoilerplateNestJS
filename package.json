@@ -11,7 +11,7 @@
   },
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "nest build",
+    "build": "nest build api_gateway && nest build microservice_customers && nest build cli",
     "format": "prettier --write \"microservices/**/**/**/**/**/**/*.ts\" \"api_gateway/**/**/**/**/**/*.ts\" \"cli/**/**/**/**/*.ts\" \"common/**/**/**/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",

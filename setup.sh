@@ -9,3 +9,5 @@ cd docker/
 docker-compose up --build --no-start --force-recreate
 
 cd ..
+
+npm run build:all
